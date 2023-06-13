@@ -14,7 +14,7 @@ If you are using npm:
     npm i @digichanges/solid-phone-number-input
 Or if you are using pnpm:
 
-    pnpm install i @digichanges/solid-phone-number-input
+    pnpm i @digichanges/solid-phone-number-input
 
 ### Usage.
 
