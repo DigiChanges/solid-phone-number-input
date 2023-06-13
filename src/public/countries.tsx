@@ -1,3 +1,5 @@
+import telephone from './telephone.webp';
+
 const countries = [{
     "name": "Afghanistan",
     "dial_code": "+93",
@@ -1453,7 +1455,7 @@ const countries = [{
 {
     "name": "🌎",
     "dial_code": "+263",
-    "emoji": "🌎",
+    "emoji": <img style={{width:'20px'}} src={telephone} alt={'telephone'}/>,
     "code": "UN"
 },]
 export default countries;

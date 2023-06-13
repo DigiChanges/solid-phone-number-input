@@ -1,34 +1,47 @@
-## Usage
+# Wizard 
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+The **solid-phone-number-input** component is a component inspired on the library **react-phone-number-input** from **catamphetamine** that includes a select with 242 countries with their respective flags and returns their iso code + the number used on the phone input
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+![](https://media.discordapp.net/attachments/1077350703443492987/1118269148103975073/image.png)
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+# Get started
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+It is very easy to use the phone input component. You can do this in just a few simple steps:
 
-## Available Scripts
+### Instalation
+If you are using npm:
 
-In the project directory, you can run:
+    npm i @digichanges/solid-phone-number-input
+Or if you are using pnpm:
 
-### `npm dev` or `npm start`
+    pnpm install i @digichanges/solid-phone-number-input
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Usage.
 
-The page will reload if you make edits.<br>
+1 - Import the component.
 
-### `npm run build`
+    '@digichanges/solid-phone-number-input/src/App';
 
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
+2 - The phone input must be inside a parent element that has a state, which will allow you to have access to the component value.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+3 - Add the required props value and onChange, which should be the state previously added:
 
-## Deployment
+![](https://media.discordapp.net/attachments/1077350703443492987/1118269942467412048/image.png)
 
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+If you do a console.log of the **state** value, you will see the value of the input changing dynamically:
+
+![](https://media.discordapp.net/attachments/1077350703443492987/1118270616529805372/image.png)
+
+### Props
+
+| Name                       | Function                                                                       | Required |
+|----------------------------|--------------------------------------------------------------------------------|----------|
+| value              | Is an accesor that tells the component the actual value of the input           | ✅        |
+| onChange                 | A setter that allows the component to change its value.                        | ✅        |
+| disabled | 	Set to true to mark both the phone number input and the country select as disabled. | ❌     |
+| readOnly | 	Set to true to mark both the phone number input and the country select as readonly. | ❌     |
+| autoComplete | 	Sets autoComplete property for phone number input.                            | ❌     |
+| className | 	<Phone/> component CSS class.                                                 | ❌     |
+| style | 	<Phone/> component style object.                                              | ❌     |
+| countrySelectComponent | Country select component. Receive properties: {className, style}               | ❌     |
+
