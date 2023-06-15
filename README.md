@@ -1,4 +1,4 @@
-# Wizard 
+# solid-phone-number-input 
 
 The **solid-phone-number-input** component is a component inspired on the library **react-phone-number-input** from **catamphetamine** that includes a select with 242 countries with their respective flags and returns their iso code + the number used on the phone input
 
